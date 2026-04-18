@@ -26,7 +26,6 @@ CREATE TABLE IF NOT EXISTS shops (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
--- Vendors  (shop_id FK — no more string matching)
 -- Vendors
 CREATE TABLE IF NOT EXISTS vendors (
     vendor_id  INT AUTO_INCREMENT PRIMARY KEY,
