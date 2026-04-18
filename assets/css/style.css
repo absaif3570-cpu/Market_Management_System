@@ -111,7 +111,7 @@ body::before {
 
 /* ── Sidebar ── */
 #sidebar-toggle {
-  display: none; position: fixed; top: 16px; right: 20px; z-index: 1100;
+  display: none;
   background: var(--glass-2); border: 1px solid var(--glass-border);
   border-radius: var(--radius-sm); padding: 8px 12px; cursor: pointer;
   color: rgba(255,255,255,0.8); font-size: 18px; line-height: 1;
