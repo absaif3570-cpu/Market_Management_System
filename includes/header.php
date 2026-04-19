@@ -83,6 +83,7 @@ $flash = flash_get();
         <a href="?page=vendor_report">👥 <span>Vendors</span></a>
         <a href="?page=manage_shop">🏪 <span>Shops</span></a>
         <a href="?page=rent_record">💰 <span>Payments</span></a>
+        <a href="?page=manage_users">👤 <span>Users</span></a>
       <?php else: ?>
         <a href="?page=vendor_dashboard">🏠 <span>Dashboard</span></a>
       <?php endif; ?>
