@@ -49,6 +49,7 @@ $flash = flash_get();
   <div class="sidebar-section">System</div>
   <a href="?page=report"><span class="s-icon">📊</span> System Report</a>
   <a href="?page=backup"><span class="s-icon">💾</span> Backup Data</a>
+  <a href="?page=manage_users"><span class="s-icon">👤</span> Manage Users</a>
   <?php endif; ?>
 
   <?php if ($is_vendor): ?>
