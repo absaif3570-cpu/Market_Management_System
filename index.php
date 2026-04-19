@@ -34,6 +34,7 @@ $route_map = [
     'vendor_profile'   => 'pages/vendor_profile.php',
     'search_vendor'    => 'pages/search_vendor.php',
     'vendor_dashboard' => 'pages/vendor_dashboard.php',
+    'manage_users'     => 'pages/manage_users.php',
     'manage_shop'      => 'pages/manage_shop.php',
     'add_shop'         => 'pages/add_shop.php',
     'edit_shop'        => 'pages/edit_shop.php',
