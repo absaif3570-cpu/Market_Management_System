@@ -2,6 +2,16 @@
 global $conn;
 $page_title = 'Market Management System';
 require_once __DIR__ . '/../config.php';
+
+// If already logged in, redirect to the correct dashboard immediately
+if (!empty($_SESSION['user_id']) && !empty($_SESSION['role'])) {
+    if ($_SESSION['role'] === 'vendor') {
+        header('Location: index.php?page=vendor_dashboard'); exit();
+    }
+    // admin or user → admin dashboard
+    header('Location: index.php?page=dashboard'); exit();
+}
+
 require __DIR__ . '/../includes/header.php';
 ?>
 <div class="home-hero">
