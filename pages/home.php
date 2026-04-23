@@ -1,4 +1,5 @@
 <?php
+session_start();
 global $conn;
 $page_title = 'Market Management System';
 require_once __DIR__ . '/../config.php';
