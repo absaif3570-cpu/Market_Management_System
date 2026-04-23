@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     csrf_verify();
     $target_user_id = isset($_POST['user_id']) ? (int)$_POST['user_id'] : 0;
     $new_role = trim($_POST['role'] ?? '');
-    $allowed_roles = ['admin', 'vendor', 'user'];
+    $allowed_roles = [ 'vendor', 'user'];
 
     if ($target_user_id > 0 && in_array($new_role, $allowed_roles, true)) {
         if ($new_role !== 'vendor') {
