@@ -1,5 +1,4 @@
 <?php
-session_start();
 global $conn;
 $page_title = 'Market Management System';
 require_once __DIR__ . '/../config.php';
@@ -9,7 +8,6 @@ if (!empty($_SESSION['user_id']) && !empty($_SESSION['role'])) {
     if ($_SESSION['role'] === 'vendor') {
         header('Location: index.php?page=vendor_dashboard'); exit();
     }
-    // admin or user → admin dashboard
     header('Location: index.php?page=dashboard'); exit();
 }
 
