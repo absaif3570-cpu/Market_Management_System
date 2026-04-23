@@ -65,11 +65,7 @@ $flash = flash_get();
 
 <!-- Navbar -->
 <nav class="navbar">
-  <<nav class="navbar">
   <div class="logo">
-    <?php if ($is_loggedin): ?>
-    <button id="sidebar-toggle" onclick="openSidebar()" title="Menu">&#9776;</button>
-    <?php endif; ?>
     <div class="logo-icon">🏪</div>
     <div>
       <?php echo htmlspecialchars(APP_NAME); ?>
