@@ -91,7 +91,6 @@ if ($flash): ?>
             <select name="role" style="padding:5px 8px;border-radius:6px;background:#1a2a1a;color:#fff;border:1px solid #2a4a2a;font-size:13px;">
               <option value="user"   <?php if ($u['role']==='user')   echo 'selected'; ?>>User</option>
               <option value="vendor" <?php if ($u['role']==='vendor') echo 'selected'; ?>>Vendor</option>
-              <option value="admin"  <?php if ($u['role']==='admin')  echo 'selected'; ?>>Admin</option>
             </select>
             <button type="submit" class="btn btn-primary btn-sm" style="padding:5px 14px;font-size:13px;">Save</button>
           </form>
